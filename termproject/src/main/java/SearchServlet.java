@@ -62,10 +62,10 @@ public class SearchServlet extends HttpServlet {
 
             if (keyword.isEmpty() || courseName.contains(keyword)) {
                out.println("ID: " + id + ", ");
-               out.println("User: " + courseName + ", ");
-               out.println("Email: " + courseDate + ", ");
-               out.println("Phone: " + courseProfessor + ", ");
-               out.println("Address: " + courseGrade + "<br>");
+               out.println("Course Name: " + courseName + ", ");
+               out.println("Course Date: " + courseDate + ", ");
+               out.println("Course Professor: " + courseProfessor + ", ");
+               out.println("Course Grade: " + courseGrade + "<br>");
             }
          }
          out.println("<a href=/termproject/search.html>Search Data</a> <br>");
